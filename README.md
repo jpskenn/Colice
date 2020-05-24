@@ -1,6 +1,5 @@
 ## Notice
-現在なし。
-At present, No information.
+近いうちに書きますっ💦
 
 # について / About
 Colice（コリス）
