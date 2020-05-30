@@ -1,12 +1,13 @@
-![](./assets/Colice_v.0.2 - 1.jpeg)
-![](./assets/Colice_v.0.2 - 2.jpeg)
 # について / About
+![](./assets/Colice_v.0.2_1.jpeg)
+
 Colice（コリス）
 
 アリスのレイアウトに発想を得た、部位を組み合わせられるカラムスタッガー（列ずれ）配列の自作キーボード。
 Self-made "Col"umnar stagger combinational moduler keyboard, inspired by Al"ice" layout.
 
 ## 特徴 / Features
+![](./assets/Colice_v.0.2_2.jpeg)
 - 一体型かつ分離型でレイアウトが変えられる
 - トップマウント形式のケース
 - ロータリーエンコーダを2個使用可能
