@@ -1,5 +1,5 @@
-!(./assets/Colice_v.0.2 - 1.jpeg)
-!(./assets/Colice_v.0.2 - 2.jpeg)
+![](./assets/Colice_v.0.2 - 1.jpeg)
+![](./assets/Colice_v.0.2 - 2.jpeg)
 # について / About
 Colice（コリス）
 
