@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 808 712" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <g id="アートボード1" transform="matrix(1.20417,0,0,1.50529,-74.6587,-58.7061)">
+        <rect x="62" y="39" width="671" height="473" style="fill:none;"/>
+        <g transform="matrix(0.830446,-1.84387e-17,2.30495e-17,0.664326,-797.511,39)">
+            <g id="Split-Right-v01" serif:id="Split Right v01">
+                <g id="pcb-02-006" serif:id="pcb 02-006">
+                    <path d="M1099.78,407.302L1140.34,598.12L1268.47,570.886L1660,570.89L1713,559.625L1712.99,257.959L1739.4,257.959L1739.4,179.276L1081.5,179.262L1081.54,297.222L1095.05,297.295L1113.87,385.884L1099.78,407.302" style="fill:rgb(65,194,0);fill-opacity:0.29;stroke:rgb(0,50,0);stroke-width:0.94px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

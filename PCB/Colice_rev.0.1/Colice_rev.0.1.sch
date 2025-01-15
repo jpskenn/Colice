@@ -1,0 +1,1490 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SMK_hsgw:pro_micro U1
+U 1 1 5E64F1EF
+P 1750 1500
+F 0 "U1" H 1750 2265 50  0000 C CNN
+F 1 "pro_micro" H 1750 2174 50  0000 C CNN
+F 2 "SMK_SU120:ArduinoProMicro-ZigZag_rev5" H 1750 1500 50  0001 C CNN
+F 3 "" H 1750 1500 50  0001 C CNN
+	1    1750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5E648BBF
+P 3000 1150
+F 0 "#PWR010" H 3000 900 50  0001 C CNN
+F 1 "GND" H 3005 977 50  0000 C CNN
+F 2 "" H 3000 1150 50  0001 C CNN
+F 3 "" H 3000 1150 50  0001 C CNN
+	1    3000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E64A22A
+P 550 1300
+F 0 "#PWR01" H 550 1050 50  0001 C CNN
+F 1 "GND" H 555 1127 50  0000 C CNN
+F 2 "" H 550 1300 50  0001 C CNN
+F 3 "" H 550 1300 50  0001 C CNN
+	1    550  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR09
+U 1 1 5E64AB3B
+P 2850 650
+F 0 "#PWR09" H 2850 500 50  0001 C CNN
+F 1 "VCC" H 2867 823 50  0000 C CNN
+F 2 "" H 2850 650 50  0001 C CNN
+F 3 "" H 2850 650 50  0001 C CNN
+	1    2850 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1300 2850 1300
+Wire Wire Line
+	2850 1300 2850 650 
+Wire Wire Line
+	3000 1150 3000 1100
+Wire Wire Line
+	3000 1100 2450 1100
+Wire Wire Line
+	1050 1200 550  1200
+Wire Wire Line
+	550  1200 550  1300
+Wire Wire Line
+	1050 1300 550  1300
+Connection ~ 550  1300
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5E64BE48
+P 4200 1150
+F 0 "SW6" H 4200 1435 50  0000 C CNN
+F 1 "SW_Push" H 4200 1344 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 4200 1350 50  0001 C CNN
+F 3 "~" H 4200 1350 50  0001 C CNN
+	1    4200 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 700  1    50   Input ~ 0
+col0
+Text GLabel 5150 700  1    50   Input ~ 0
+col1
+Wire Wire Line
+	4000 700  4000 1150
+Text GLabel 3450 1450 0    50   Input ~ 0
+row0
+$Comp
+L Device:D D6
+U 1 1 5E6522A5
+P 4400 1300
+F 0 "D6" V 4446 1221 50  0000 R CNN
+F 1 "D" V 4355 1221 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4400 1300 50  0001 C CNN
+F 3 "~" H 4400 1300 50  0001 C CNN
+	1    4400 1300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3450 2500 0    50   Input ~ 0
+row1
+Text GLabel 1050 1100 0    50   Input ~ 0
+row0
+Text GLabel 1050 1600 0    50   Input ~ 0
+row1
+Text GLabel 1050 2000 0    50   Input ~ 0
+col0
+Text GLabel 1050 2100 0    50   Input ~ 0
+col1
+NoConn ~ 2450 1800
+NoConn ~ 2450 1900
+NoConn ~ 2450 2000
+NoConn ~ 2450 2100
+Text GLabel 2450 1200 2    50   Input ~ 0
+reset
+Text GLabel 950  2850 0    50   Input ~ 0
+reset
+$Comp
+L Switch:SW_Push SW61
+U 1 1 5E657C8E
+P 1150 2850
+F 0 "SW61" H 1150 3135 50  0000 C CNN
+F 1 "SW_Push" H 1150 3044 50  0000 C CNN
+F 2 "SMK_SU120:ResetSW" H 1150 3050 50  0001 C CNN
+F 3 "~" H 1150 3050 50  0001 C CNN
+	1    1150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E658554
+P 1350 2850
+F 0 "#PWR04" H 1350 2600 50  0001 C CNN
+F 1 "GND" H 1355 2677 50  0000 C CNN
+F 2 "" H 1350 2850 50  0001 C CNN
+F 3 "" H 1350 2850 50  0001 C CNN
+	1    1350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E6647AB
+P 1950 3200
+F 0 "J2" H 1868 2875 50  0000 C CNN
+F 1 "LED" H 1868 2966 50  0000 C CNN
+F 2 "SMK_SU120:StripLED_rev2" H 1950 3200 50  0001 C CNN
+F 3 "~" H 1950 3200 50  0001 C CNN
+	1    1950 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5E6652B9
+P 2350 3400
+F 0 "#PWR08" H 2350 3150 50  0001 C CNN
+F 1 "GND" H 2355 3227 50  0000 C CNN
+F 2 "" H 2350 3400 50  0001 C CNN
+F 3 "" H 2350 3400 50  0001 C CNN
+	1    2350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR07
+U 1 1 5E665D1C
+P 2350 3000
+F 0 "#PWR07" H 2350 2850 50  0001 C CNN
+F 1 "VCC" H 2367 3173 50  0000 C CNN
+F 2 "" H 2350 3000 50  0001 C CNN
+F 3 "" H 2350 3000 50  0001 C CNN
+	1    2350 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 3200 2    50   Input ~ 0
+led
+Wire Wire Line
+	2350 3000 2350 3100
+Wire Wire Line
+	2350 3100 2150 3100
+Wire Wire Line
+	2150 3300 2350 3300
+Wire Wire Line
+	2350 3300 2350 3400
+Text GLabel 1050 1000 0    50   Input ~ 0
+led
+$Comp
+L #local-lib:MJ-4PP-9 J1
+U 1 1 5E653BF9
+P 1150 4200
+F 0 "J1" H 1181 4618 50  0000 C CNN
+F 1 "MJ-4PP-9" H 1181 4527 50  0000 C CNN
+F 2 "SMK_SU120:MJ-4PP-9" H 1425 4375 50  0001 C CNN
+F 3 "" H 1425 4375 50  0001 C CNN
+	1    1150 4200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 4000
+$Comp
+L power:GND #PWR06
+U 1 1 5E654D9B
+P 1700 4400
+F 0 "#PWR06" H 1700 4150 50  0001 C CNN
+F 1 "GND" H 1705 4227 50  0000 C CNN
+F 2 "" H 1700 4400 50  0001 C CNN
+F 3 "" H 1700 4400 50  0001 C CNN
+	1    1700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 5E65556E
+P 1700 3900
+F 0 "#PWR05" H 1700 3750 50  0001 C CNN
+F 1 "VCC" H 1717 4073 50  0000 C CNN
+F 2 "" H 1700 3900 50  0001 C CNN
+F 3 "" H 1700 3900 50  0001 C CNN
+	1    1700 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 4300 2    50   Input ~ 0
+data
+Wire Wire Line
+	1700 3900 1700 4100
+Wire Wire Line
+	1700 4100 1350 4100
+Wire Wire Line
+	1350 4200 1700 4200
+Wire Wire Line
+	1700 4200 1700 4400
+Text GLabel 1050 1400 0    50   Input ~ 0
+data
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E656A43
+P 1200 5150
+F 0 "#FLG02" H 1200 5225 50  0001 C CNN
+F 1 "PWR_FLAG" H 1200 5323 50  0000 C CNN
+F 2 "" H 1200 5150 50  0001 C CNN
+F 3 "~" H 1200 5150 50  0001 C CNN
+	1    1200 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5E657794
+P 1200 5150
+F 0 "#PWR03" H 1200 5000 50  0001 C CNN
+F 1 "VCC" H 1217 5323 50  0000 C CNN
+F 2 "" H 1200 5150 50  0001 C CNN
+F 3 "" H 1200 5150 50  0001 C CNN
+	1    1200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E657D30
+P 800 5150
+F 0 "#FLG01" H 800 5225 50  0001 C CNN
+F 1 "PWR_FLAG" H 800 5323 50  0000 C CNN
+F 2 "" H 800 5150 50  0001 C CNN
+F 3 "~" H 800 5150 50  0001 C CNN
+	1    800  5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E6582B8
+P 800 5150
+F 0 "#PWR02" H 800 4900 50  0001 C CNN
+F 1 "GND" H 805 4977 50  0000 C CNN
+F 2 "" H 800 5150 50  0001 C CNN
+F 3 "" H 800 5150 50  0001 C CNN
+	1    800  5150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2450 1000
+Connection ~ 4000 1150
+$Comp
+L Device:D D1
+U 1 1 5E6F51D7
+P 3600 1600
+F 0 "D1" V 3646 1521 50  0000 R CNN
+F 1 "D" V 3555 1521 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 3600 1600 50  0001 C CNN
+F 3 "~" H 3600 1600 50  0001 C CNN
+	1    3600 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 1150 4000 1750
+Connection ~ 4000 1750
+Wire Wire Line
+	3450 1450 3600 1450
+Connection ~ 3600 1450
+Wire Wire Line
+	3600 1450 4400 1450
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E6F4010
+P 3800 1750
+F 0 "SW1" H 3800 1900 50  0000 C CNN
+F 1 "SW_Push" H 3800 2000 50  0000 C CNN
+F 2 "" H 3800 1950 50  0001 C CNN
+F 3 "~" H 3800 1950 50  0001 C CNN
+	1    3800 1750
+	-1   0    0    1   
+$EndComp
+Text GLabel 1050 1700 0    50   Input ~ 0
+row2
+Text GLabel 1050 1800 0    50   Input ~ 0
+row3
+Text GLabel 1050 1900 0    50   Input ~ 0
+row4
+NoConn ~ 1050 1500
+Text GLabel 2450 1400 2    50   Input ~ 0
+col2
+Text GLabel 2450 1500 2    50   Input ~ 0
+col3
+Text GLabel 2450 1600 2    50   Input ~ 0
+col4
+Text GLabel 2450 1700 2    50   Input ~ 0
+col5
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5E70911F
+P 5350 1150
+F 0 "SW16" H 5350 1435 50  0000 C CNN
+F 1 "SW_Push" H 5350 1344 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 5350 1350 50  0001 C CNN
+F 3 "~" H 5350 1350 50  0001 C CNN
+	1    5350 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 700  5150 1150
+$Comp
+L Device:D D16
+U 1 1 5E70912A
+P 5550 1300
+F 0 "D16" V 5596 1221 50  0000 R CNN
+F 1 "D" V 5505 1221 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5550 1300 50  0001 C CNN
+F 3 "~" H 5550 1300 50  0001 C CNN
+	1    5550 1300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 1150
+$Comp
+L Device:D D11
+U 1 1 5E709135
+P 4750 1600
+F 0 "D11" V 4796 1521 50  0000 R CNN
+F 1 "D" V 4705 1521 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4750 1600 50  0001 C CNN
+F 3 "~" H 4750 1600 50  0001 C CNN
+	1    4750 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 1150 5150 1750
+Connection ~ 5150 1750
+Connection ~ 4750 1450
+Wire Wire Line
+	4750 1450 5550 1450
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5E709145
+P 4950 1750
+F 0 "SW11" H 4950 1900 50  0000 C CNN
+F 1 "SW_Push" H 4950 2000 50  0000 C CNN
+F 2 "" H 4950 1950 50  0001 C CNN
+F 3 "~" H 4950 1950 50  0001 C CNN
+	1    4950 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW26
+U 1 1 5E70CA86
+P 6500 1150
+F 0 "SW26" H 6500 1435 50  0000 C CNN
+F 1 "SW_Push" H 6500 1344 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 6500 1350 50  0001 C CNN
+F 3 "~" H 6500 1350 50  0001 C CNN
+	1    6500 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 700  6300 1150
+$Comp
+L Device:D D26
+U 1 1 5E70CA91
+P 6700 1300
+F 0 "D26" V 6746 1221 50  0000 R CNN
+F 1 "D" V 6655 1221 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 6700 1300 50  0001 C CNN
+F 3 "~" H 6700 1300 50  0001 C CNN
+	1    6700 1300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 1150
+$Comp
+L Device:D D21
+U 1 1 5E70CA9C
+P 5900 1600
+F 0 "D21" V 5946 1521 50  0000 R CNN
+F 1 "D" V 5855 1521 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5900 1600 50  0001 C CNN
+F 3 "~" H 5900 1600 50  0001 C CNN
+	1    5900 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 1150 6300 1750
+Connection ~ 6300 1750
+Connection ~ 5900 1450
+Wire Wire Line
+	5900 1450 6700 1450
+$Comp
+L Switch:SW_Push SW21
+U 1 1 5E70CAAC
+P 6100 1750
+F 0 "SW21" H 6100 1900 50  0000 C CNN
+F 1 "SW_Push" H 6100 2000 50  0000 C CNN
+F 2 "" H 6100 1950 50  0001 C CNN
+F 3 "~" H 6100 1950 50  0001 C CNN
+	1    6100 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW36
+U 1 1 5E70CAB6
+P 7650 1150
+F 0 "SW36" H 7650 1435 50  0000 C CNN
+F 1 "SW_Push" H 7650 1344 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 7650 1350 50  0001 C CNN
+F 3 "~" H 7650 1350 50  0001 C CNN
+	1    7650 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 700  7450 1150
+$Comp
+L Device:D D36
+U 1 1 5E70CAC1
+P 7850 1300
+F 0 "D36" V 7896 1221 50  0000 R CNN
+F 1 "D" V 7805 1221 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7850 1300 50  0001 C CNN
+F 3 "~" H 7850 1300 50  0001 C CNN
+	1    7850 1300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7450 1150
+$Comp
+L Device:D D31
+U 1 1 5E70CACC
+P 7050 1600
+F 0 "D31" V 7096 1521 50  0000 R CNN
+F 1 "D" V 7005 1521 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7050 1600 50  0001 C CNN
+F 3 "~" H 7050 1600 50  0001 C CNN
+	1    7050 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 1150 7450 1750
+Connection ~ 7450 1750
+Connection ~ 7050 1450
+Wire Wire Line
+	7050 1450 7850 1450
+$Comp
+L Switch:SW_Push SW31
+U 1 1 5E70CADC
+P 7250 1750
+F 0 "SW31" H 7250 1900 50  0000 C CNN
+F 1 "SW_Push" H 7250 2000 50  0000 C CNN
+F 2 "" H 7250 1950 50  0001 C CNN
+F 3 "~" H 7250 1950 50  0001 C CNN
+	1    7250 1750
+	-1   0    0    1   
+$EndComp
+Text GLabel 6300 700  1    50   Input ~ 0
+col2
+Text GLabel 7450 700  1    50   Input ~ 0
+col3
+Connection ~ 4400 1450
+Connection ~ 5550 1450
+Connection ~ 6700 1450
+Wire Wire Line
+	7050 1450 6900 1450
+Wire Wire Line
+	5900 1450 5750 1450
+Wire Wire Line
+	4750 1450 4600 1450
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5E79CEFB
+P 4200 2200
+F 0 "SW7" H 4200 2485 50  0000 C CNN
+F 1 "SW_Push" H 4200 2394 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 4200 2400 50  0001 C CNN
+F 3 "~" H 4200 2400 50  0001 C CNN
+	1    4200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 5E79CF06
+P 4400 2350
+F 0 "D7" V 4446 2271 50  0000 R CNN
+F 1 "D" V 4355 2271 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4400 2350 50  0001 C CNN
+F 3 "~" H 4400 2350 50  0001 C CNN
+	1    4400 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 2200
+$Comp
+L Device:D D2
+U 1 1 5E79CF11
+P 3600 2650
+F 0 "D2" V 3646 2571 50  0000 R CNN
+F 1 "D" V 3555 2571 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 3600 2650 50  0001 C CNN
+F 3 "~" H 3600 2650 50  0001 C CNN
+	1    3600 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 2200 4000 2800
+Connection ~ 4000 2800
+Wire Wire Line
+	3450 2500 3600 2500
+Connection ~ 3600 2500
+Wire Wire Line
+	3600 2500 4400 2500
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E79CF21
+P 3800 2800
+F 0 "SW2" H 3800 2950 50  0000 C CNN
+F 1 "SW_Push" H 3800 3050 50  0000 C CNN
+F 2 "" H 3800 3000 50  0001 C CNN
+F 3 "~" H 3800 3000 50  0001 C CNN
+	1    3800 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5E79CF2B
+P 5350 2200
+F 0 "SW17" H 5350 2485 50  0000 C CNN
+F 1 "SW_Push" H 5350 2394 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 5350 2400 50  0001 C CNN
+F 3 "~" H 5350 2400 50  0001 C CNN
+	1    5350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D17
+U 1 1 5E79CF36
+P 5550 2350
+F 0 "D17" V 5596 2271 50  0000 R CNN
+F 1 "D" V 5505 2271 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5550 2350 50  0001 C CNN
+F 3 "~" H 5550 2350 50  0001 C CNN
+	1    5550 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 2200
+$Comp
+L Device:D D12
+U 1 1 5E79CF41
+P 4750 2650
+F 0 "D12" V 4796 2571 50  0000 R CNN
+F 1 "D" V 4705 2571 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4750 2650 50  0001 C CNN
+F 3 "~" H 4750 2650 50  0001 C CNN
+	1    4750 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 2200 5150 2800
+Connection ~ 5150 2800
+Connection ~ 4750 2500
+Wire Wire Line
+	4750 2500 5550 2500
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5E79CF50
+P 4950 2800
+F 0 "SW12" H 4950 2950 50  0000 C CNN
+F 1 "SW_Push" H 4950 3050 50  0000 C CNN
+F 2 "" H 4950 3000 50  0001 C CNN
+F 3 "~" H 4950 3000 50  0001 C CNN
+	1    4950 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW27
+U 1 1 5E79CF5A
+P 6500 2200
+F 0 "SW27" H 6500 2485 50  0000 C CNN
+F 1 "SW_Push" H 6500 2394 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 6500 2400 50  0001 C CNN
+F 3 "~" H 6500 2400 50  0001 C CNN
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D27
+U 1 1 5E79CF65
+P 6700 2350
+F 0 "D27" V 6746 2271 50  0000 R CNN
+F 1 "D" V 6655 2271 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 6700 2350 50  0001 C CNN
+F 3 "~" H 6700 2350 50  0001 C CNN
+	1    6700 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 2200
+$Comp
+L Device:D D22
+U 1 1 5E79CF70
+P 5900 2650
+F 0 "D22" V 5946 2571 50  0000 R CNN
+F 1 "D" V 5855 2571 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5900 2650 50  0001 C CNN
+F 3 "~" H 5900 2650 50  0001 C CNN
+	1    5900 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 2200 6300 2800
+Connection ~ 6300 2800
+Connection ~ 5900 2500
+Wire Wire Line
+	5900 2500 6700 2500
+$Comp
+L Switch:SW_Push SW22
+U 1 1 5E79CF7F
+P 6100 2800
+F 0 "SW22" H 6100 2950 50  0000 C CNN
+F 1 "SW_Push" H 6100 3050 50  0000 C CNN
+F 2 "" H 6100 3000 50  0001 C CNN
+F 3 "~" H 6100 3000 50  0001 C CNN
+	1    6100 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW37
+U 1 1 5E79CF89
+P 7650 2200
+F 0 "SW37" H 7650 2485 50  0000 C CNN
+F 1 "SW_Push" H 7650 2394 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 7650 2400 50  0001 C CNN
+F 3 "~" H 7650 2400 50  0001 C CNN
+	1    7650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D37
+U 1 1 5E79CF94
+P 7850 2350
+F 0 "D37" V 7896 2271 50  0000 R CNN
+F 1 "D" V 7805 2271 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7850 2350 50  0001 C CNN
+F 3 "~" H 7850 2350 50  0001 C CNN
+	1    7850 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7450 2200
+$Comp
+L Device:D D32
+U 1 1 5E79CF9F
+P 7050 2650
+F 0 "D32" V 7096 2571 50  0000 R CNN
+F 1 "D" V 7005 2571 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7050 2650 50  0001 C CNN
+F 3 "~" H 7050 2650 50  0001 C CNN
+	1    7050 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 2200 7450 2800
+Connection ~ 7450 2800
+Connection ~ 7050 2500
+Wire Wire Line
+	7050 2500 7850 2500
+$Comp
+L Switch:SW_Push SW32
+U 1 1 5E79CFAE
+P 7250 2800
+F 0 "SW32" H 7250 2950 50  0000 C CNN
+F 1 "SW_Push" H 7250 3050 50  0000 C CNN
+F 2 "" H 7250 3000 50  0001 C CNN
+F 3 "~" H 7250 3000 50  0001 C CNN
+	1    7250 2800
+	-1   0    0    1   
+$EndComp
+Connection ~ 4400 2500
+Connection ~ 5550 2500
+Connection ~ 6700 2500
+Wire Wire Line
+	7050 2500 6900 2500
+Wire Wire Line
+	5900 2500 5750 2500
+Wire Wire Line
+	4750 2500 4600 2500
+Wire Wire Line
+	4000 1750 4000 2200
+Wire Wire Line
+	5150 1750 5150 2200
+Wire Wire Line
+	6300 1750 6300 2200
+Wire Wire Line
+	7450 1750 7450 2200
+Wire Wire Line
+	6700 1450 7050 1450
+Wire Wire Line
+	5550 1450 5900 1450
+Wire Wire Line
+	4400 1450 4750 1450
+Wire Wire Line
+	6700 2500 7050 2500
+Wire Wire Line
+	5550 2500 5900 2500
+Wire Wire Line
+	4400 2500 4750 2500
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5E7B44E3
+P 4200 3250
+F 0 "SW8" H 4200 3535 50  0000 C CNN
+F 1 "SW_Push" H 4200 3444 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 4200 3450 50  0001 C CNN
+F 3 "~" H 4200 3450 50  0001 C CNN
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 3550 0    50   Input ~ 0
+row2
+$Comp
+L Device:D D8
+U 1 1 5E7B44EF
+P 4400 3400
+F 0 "D8" V 4446 3321 50  0000 R CNN
+F 1 "D" V 4355 3321 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4400 3400 50  0001 C CNN
+F 3 "~" H 4400 3400 50  0001 C CNN
+	1    4400 3400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3450 4600 0    50   Input ~ 0
+row3
+Connection ~ 4000 3250
+$Comp
+L Device:D D3
+U 1 1 5E7B44FB
+P 3600 3700
+F 0 "D3" V 3646 3621 50  0000 R CNN
+F 1 "D" V 3555 3621 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 3600 3700 50  0001 C CNN
+F 3 "~" H 3600 3700 50  0001 C CNN
+	1    3600 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 3250 4000 3850
+Connection ~ 4000 3850
+Wire Wire Line
+	3450 3550 3600 3550
+Connection ~ 3600 3550
+Wire Wire Line
+	3600 3550 4400 3550
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E7B450A
+P 3800 3850
+F 0 "SW3" H 3800 4000 50  0000 C CNN
+F 1 "SW_Push" H 3800 4100 50  0000 C CNN
+F 2 "" H 3800 4050 50  0001 C CNN
+F 3 "~" H 3800 4050 50  0001 C CNN
+	1    3800 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 5E7B4514
+P 5350 3250
+F 0 "SW18" H 5350 3535 50  0000 C CNN
+F 1 "SW_Push" H 5350 3444 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 5350 3450 50  0001 C CNN
+F 3 "~" H 5350 3450 50  0001 C CNN
+	1    5350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D18
+U 1 1 5E7B451F
+P 5550 3400
+F 0 "D18" V 5596 3321 50  0000 R CNN
+F 1 "D" V 5505 3321 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5550 3400 50  0001 C CNN
+F 3 "~" H 5550 3400 50  0001 C CNN
+	1    5550 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 3250
+$Comp
+L Device:D D13
+U 1 1 5E7B452A
+P 4750 3700
+F 0 "D13" V 4796 3621 50  0000 R CNN
+F 1 "D" V 4705 3621 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4750 3700 50  0001 C CNN
+F 3 "~" H 4750 3700 50  0001 C CNN
+	1    4750 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 3250 5150 3850
+Connection ~ 5150 3850
+Connection ~ 4750 3550
+Wire Wire Line
+	4750 3550 5550 3550
+$Comp
+L Switch:SW_Push SW13
+U 1 1 5E7B4538
+P 4950 3850
+F 0 "SW13" H 4950 4000 50  0000 C CNN
+F 1 "SW_Push" H 4950 4100 50  0000 C CNN
+F 2 "" H 4950 4050 50  0001 C CNN
+F 3 "~" H 4950 4050 50  0001 C CNN
+	1    4950 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW28
+U 1 1 5E7B4542
+P 6500 3250
+F 0 "SW28" H 6500 3535 50  0000 C CNN
+F 1 "SW_Push" H 6500 3444 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 6500 3450 50  0001 C CNN
+F 3 "~" H 6500 3450 50  0001 C CNN
+	1    6500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D28
+U 1 1 5E7B454D
+P 6700 3400
+F 0 "D28" V 6746 3321 50  0000 R CNN
+F 1 "D" V 6655 3321 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 6700 3400 50  0001 C CNN
+F 3 "~" H 6700 3400 50  0001 C CNN
+	1    6700 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 3250
+$Comp
+L Device:D D23
+U 1 1 5E7B4558
+P 5900 3700
+F 0 "D23" V 5946 3621 50  0000 R CNN
+F 1 "D" V 5855 3621 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5900 3700 50  0001 C CNN
+F 3 "~" H 5900 3700 50  0001 C CNN
+	1    5900 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 3250 6300 3850
+Connection ~ 6300 3850
+Connection ~ 5900 3550
+Wire Wire Line
+	5900 3550 6700 3550
+$Comp
+L Switch:SW_Push SW23
+U 1 1 5E7B4566
+P 6100 3850
+F 0 "SW23" H 6100 4000 50  0000 C CNN
+F 1 "SW_Push" H 6100 4100 50  0000 C CNN
+F 2 "" H 6100 4050 50  0001 C CNN
+F 3 "~" H 6100 4050 50  0001 C CNN
+	1    6100 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW38
+U 1 1 5E7B4570
+P 7650 3250
+F 0 "SW38" H 7650 3535 50  0000 C CNN
+F 1 "SW_Push" H 7650 3444 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 7650 3450 50  0001 C CNN
+F 3 "~" H 7650 3450 50  0001 C CNN
+	1    7650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D38
+U 1 1 5E7B457B
+P 7850 3400
+F 0 "D38" V 7896 3321 50  0000 R CNN
+F 1 "D" V 7805 3321 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7850 3400 50  0001 C CNN
+F 3 "~" H 7850 3400 50  0001 C CNN
+	1    7850 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7450 3250
+$Comp
+L Device:D D33
+U 1 1 5E7B4586
+P 7050 3700
+F 0 "D33" V 7096 3621 50  0000 R CNN
+F 1 "D" V 7005 3621 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7050 3700 50  0001 C CNN
+F 3 "~" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 3250 7450 3850
+Connection ~ 7450 3850
+Connection ~ 7050 3550
+Wire Wire Line
+	7050 3550 7850 3550
+$Comp
+L Switch:SW_Push SW33
+U 1 1 5E7B4594
+P 7250 3850
+F 0 "SW33" H 7250 4000 50  0000 C CNN
+F 1 "SW_Push" H 7250 4100 50  0000 C CNN
+F 2 "" H 7250 4050 50  0001 C CNN
+F 3 "~" H 7250 4050 50  0001 C CNN
+	1    7250 3850
+	-1   0    0    1   
+$EndComp
+Connection ~ 4400 3550
+Connection ~ 5550 3550
+Connection ~ 6700 3550
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5E7B4606
+P 4200 4300
+F 0 "SW9" H 4200 4585 50  0000 C CNN
+F 1 "SW_Push" H 4200 4494 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 4200 4500 50  0001 C CNN
+F 3 "~" H 4200 4500 50  0001 C CNN
+	1    4200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 5E7B4610
+P 4400 4450
+F 0 "D9" V 4446 4371 50  0000 R CNN
+F 1 "D" V 4355 4371 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4400 4450 50  0001 C CNN
+F 3 "~" H 4400 4450 50  0001 C CNN
+	1    4400 4450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 4300
+$Comp
+L Device:D D4
+U 1 1 5E7B461B
+P 3600 4750
+F 0 "D4" V 3646 4671 50  0000 R CNN
+F 1 "D" V 3555 4671 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 3600 4750 50  0001 C CNN
+F 3 "~" H 3600 4750 50  0001 C CNN
+	1    3600 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 4300 4000 4900
+Connection ~ 4000 4900
+Wire Wire Line
+	3450 4600 3600 4600
+Connection ~ 3600 4600
+Wire Wire Line
+	3600 4600 4400 4600
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5E7B462B
+P 3800 4900
+F 0 "SW4" H 3800 5050 50  0000 C CNN
+F 1 "SW_Push" H 3800 5150 50  0000 C CNN
+F 2 "" H 3800 5100 50  0001 C CNN
+F 3 "~" H 3800 5100 50  0001 C CNN
+	1    3800 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW19
+U 1 1 5E7B4635
+P 5350 4300
+F 0 "SW19" H 5350 4585 50  0000 C CNN
+F 1 "SW_Push" H 5350 4494 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 5350 4500 50  0001 C CNN
+F 3 "~" H 5350 4500 50  0001 C CNN
+	1    5350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D19
+U 1 1 5E7B463F
+P 5550 4450
+F 0 "D19" V 5596 4371 50  0000 R CNN
+F 1 "D" V 5505 4371 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5550 4450 50  0001 C CNN
+F 3 "~" H 5550 4450 50  0001 C CNN
+	1    5550 4450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 4300
+$Comp
+L Device:D D14
+U 1 1 5E7B464A
+P 4750 4750
+F 0 "D14" V 4796 4671 50  0000 R CNN
+F 1 "D" V 4705 4671 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4750 4750 50  0001 C CNN
+F 3 "~" H 4750 4750 50  0001 C CNN
+	1    4750 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 4300 5150 4900
+Connection ~ 5150 4900
+Connection ~ 4750 4600
+Wire Wire Line
+	4750 4600 5550 4600
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5E7B4659
+P 4950 4900
+F 0 "SW14" H 4950 5050 50  0000 C CNN
+F 1 "SW_Push" H 4950 5150 50  0000 C CNN
+F 2 "" H 4950 5100 50  0001 C CNN
+F 3 "~" H 4950 5100 50  0001 C CNN
+	1    4950 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW29
+U 1 1 5E7B4663
+P 6500 4300
+F 0 "SW29" H 6500 4585 50  0000 C CNN
+F 1 "SW_Push" H 6500 4494 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 6500 4500 50  0001 C CNN
+F 3 "~" H 6500 4500 50  0001 C CNN
+	1    6500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D29
+U 1 1 5E7B466D
+P 6700 4450
+F 0 "D29" V 6746 4371 50  0000 R CNN
+F 1 "D" V 6655 4371 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 6700 4450 50  0001 C CNN
+F 3 "~" H 6700 4450 50  0001 C CNN
+	1    6700 4450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 4300
+$Comp
+L Device:D D24
+U 1 1 5E7B4678
+P 5900 4750
+F 0 "D24" V 5946 4671 50  0000 R CNN
+F 1 "D" V 5855 4671 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5900 4750 50  0001 C CNN
+F 3 "~" H 5900 4750 50  0001 C CNN
+	1    5900 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 4300 6300 4900
+Connection ~ 6300 4900
+Connection ~ 5900 4600
+Wire Wire Line
+	5900 4600 6700 4600
+$Comp
+L Switch:SW_Push SW24
+U 1 1 5E7B4687
+P 6100 4900
+F 0 "SW24" H 6100 5050 50  0000 C CNN
+F 1 "SW_Push" H 6100 5150 50  0000 C CNN
+F 2 "" H 6100 5100 50  0001 C CNN
+F 3 "~" H 6100 5100 50  0001 C CNN
+	1    6100 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW39
+U 1 1 5E7B4691
+P 7650 4300
+F 0 "SW39" H 7650 4585 50  0000 C CNN
+F 1 "SW_Push" H 7650 4494 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 7650 4500 50  0001 C CNN
+F 3 "~" H 7650 4500 50  0001 C CNN
+	1    7650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D39
+U 1 1 5E7B469B
+P 7850 4450
+F 0 "D39" V 7896 4371 50  0000 R CNN
+F 1 "D" V 7805 4371 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7850 4450 50  0001 C CNN
+F 3 "~" H 7850 4450 50  0001 C CNN
+	1    7850 4450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7450 4300
+$Comp
+L Device:D D34
+U 1 1 5E7B46A6
+P 7050 4750
+F 0 "D34" V 7096 4671 50  0000 R CNN
+F 1 "D" V 7005 4671 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7050 4750 50  0001 C CNN
+F 3 "~" H 7050 4750 50  0001 C CNN
+	1    7050 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 4300 7450 4900
+Connection ~ 7450 4900
+Connection ~ 7050 4600
+Wire Wire Line
+	7050 4600 7850 4600
+$Comp
+L Switch:SW_Push SW34
+U 1 1 5E7B46B5
+P 7250 4900
+F 0 "SW34" H 7250 5050 50  0000 C CNN
+F 1 "SW_Push" H 7250 5150 50  0000 C CNN
+F 2 "" H 7250 5100 50  0001 C CNN
+F 3 "~" H 7250 5100 50  0001 C CNN
+	1    7250 4900
+	-1   0    0    1   
+$EndComp
+Connection ~ 4400 4600
+Connection ~ 5550 4600
+Connection ~ 6700 4600
+Wire Wire Line
+	4000 3850 4000 4300
+Wire Wire Line
+	5150 3850 5150 4300
+Wire Wire Line
+	6300 3850 6300 4300
+Wire Wire Line
+	7450 3850 7450 4300
+Wire Wire Line
+	4000 2800 4000 3250
+Wire Wire Line
+	5150 2800 5150 3250
+Wire Wire Line
+	6300 2800 6300 3250
+Wire Wire Line
+	7450 2800 7450 3250
+Text GLabel 3450 5650 0    50   Input ~ 0
+row4
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5E7D9F48
+P 4200 5350
+F 0 "SW10" H 4200 5635 50  0000 C CNN
+F 1 "SW_Push" H 4200 5544 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 4200 5550 50  0001 C CNN
+F 3 "~" H 4200 5550 50  0001 C CNN
+	1    4200 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D10
+U 1 1 5E7D9F52
+P 4400 5500
+F 0 "D10" V 4446 5421 50  0000 R CNN
+F 1 "D" V 4355 5421 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4400 5500 50  0001 C CNN
+F 3 "~" H 4400 5500 50  0001 C CNN
+	1    4400 5500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 5350
+$Comp
+L Device:D D5
+U 1 1 5E7D9F5D
+P 3600 5800
+F 0 "D5" V 3646 5721 50  0000 R CNN
+F 1 "D" V 3555 5721 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 3600 5800 50  0001 C CNN
+F 3 "~" H 3600 5800 50  0001 C CNN
+	1    3600 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 5350 4000 5950
+Connection ~ 4000 5950
+Wire Wire Line
+	4000 5950 4000 6050
+Wire Wire Line
+	3450 5650 3600 5650
+Connection ~ 3600 5650
+Wire Wire Line
+	3600 5650 4400 5650
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5E7D9F6D
+P 3800 5950
+F 0 "SW5" H 3800 6100 50  0000 C CNN
+F 1 "SW_Push" H 3800 6200 50  0000 C CNN
+F 2 "" H 3800 6150 50  0001 C CNN
+F 3 "~" H 3800 6150 50  0001 C CNN
+	1    3800 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5E7D9F77
+P 5350 5350
+F 0 "SW20" H 5350 5635 50  0000 C CNN
+F 1 "SW_Push" H 5350 5544 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 5350 5550 50  0001 C CNN
+F 3 "~" H 5350 5550 50  0001 C CNN
+	1    5350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D20
+U 1 1 5E7D9F81
+P 5550 5500
+F 0 "D20" V 5596 5421 50  0000 R CNN
+F 1 "D" V 5505 5421 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5550 5500 50  0001 C CNN
+F 3 "~" H 5550 5500 50  0001 C CNN
+	1    5550 5500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 5350
+$Comp
+L Device:D D15
+U 1 1 5E7D9F8C
+P 4750 5800
+F 0 "D15" V 4796 5721 50  0000 R CNN
+F 1 "D" V 4705 5721 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 4750 5800 50  0001 C CNN
+F 3 "~" H 4750 5800 50  0001 C CNN
+	1    4750 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 5350 5150 5950
+Connection ~ 5150 5950
+Wire Wire Line
+	5150 5950 5150 6050
+Connection ~ 4750 5650
+Wire Wire Line
+	4750 5650 5550 5650
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5E7D9F9B
+P 4950 5950
+F 0 "SW15" H 4950 6100 50  0000 C CNN
+F 1 "SW_Push" H 4950 6200 50  0000 C CNN
+F 2 "" H 4950 6150 50  0001 C CNN
+F 3 "~" H 4950 6150 50  0001 C CNN
+	1    4950 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW30
+U 1 1 5E7D9FA5
+P 6500 5350
+F 0 "SW30" H 6500 5635 50  0000 C CNN
+F 1 "SW_Push" H 6500 5544 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 6500 5550 50  0001 C CNN
+F 3 "~" H 6500 5550 50  0001 C CNN
+	1    6500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D30
+U 1 1 5E7D9FAF
+P 6700 5500
+F 0 "D30" V 6746 5421 50  0000 R CNN
+F 1 "D" V 6655 5421 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 6700 5500 50  0001 C CNN
+F 3 "~" H 6700 5500 50  0001 C CNN
+	1    6700 5500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 5350
+$Comp
+L Device:D D25
+U 1 1 5E7D9FBA
+P 5900 5800
+F 0 "D25" V 5946 5721 50  0000 R CNN
+F 1 "D" V 5855 5721 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 5900 5800 50  0001 C CNN
+F 3 "~" H 5900 5800 50  0001 C CNN
+	1    5900 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 5350 6300 5950
+Connection ~ 6300 5950
+Wire Wire Line
+	6300 5950 6300 6050
+Connection ~ 5900 5650
+Wire Wire Line
+	5900 5650 6700 5650
+$Comp
+L Switch:SW_Push SW25
+U 1 1 5E7D9FC9
+P 6100 5950
+F 0 "SW25" H 6100 6100 50  0000 C CNN
+F 1 "SW_Push" H 6100 6200 50  0000 C CNN
+F 2 "" H 6100 6150 50  0001 C CNN
+F 3 "~" H 6100 6150 50  0001 C CNN
+	1    6100 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW40
+U 1 1 5E7D9FD3
+P 7650 5350
+F 0 "SW40" H 7650 5635 50  0000 C CNN
+F 1 "SW_Push" H 7650 5544 50  0000 C CNN
+F 2 "SMK_SU120:CherryMX_MidHeight_Choc_Hotswap_rev5" H 7650 5550 50  0001 C CNN
+F 3 "~" H 7650 5550 50  0001 C CNN
+	1    7650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D40
+U 1 1 5E7D9FDD
+P 7850 5500
+F 0 "D40" V 7896 5421 50  0000 R CNN
+F 1 "D" V 7805 5421 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7850 5500 50  0001 C CNN
+F 3 "~" H 7850 5500 50  0001 C CNN
+	1    7850 5500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7450 5350
+$Comp
+L Device:D D35
+U 1 1 5E7D9FE8
+P 7050 5800
+F 0 "D35" V 7096 5721 50  0000 R CNN
+F 1 "D" V 7005 5721 50  0000 R CNN
+F 2 "SMK_SU120:diode_TH_SMD_rev2" H 7050 5800 50  0001 C CNN
+F 3 "~" H 7050 5800 50  0001 C CNN
+	1    7050 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 5350 7450 5950
+Connection ~ 7450 5950
+Wire Wire Line
+	7450 5950 7450 6050
+Connection ~ 7050 5650
+Wire Wire Line
+	7050 5650 7850 5650
+$Comp
+L Switch:SW_Push SW35
+U 1 1 5E7D9FF7
+P 7250 5950
+F 0 "SW35" H 7250 6100 50  0000 C CNN
+F 1 "SW_Push" H 7250 6200 50  0000 C CNN
+F 2 "" H 7250 6150 50  0001 C CNN
+F 3 "~" H 7250 6150 50  0001 C CNN
+	1    7250 5950
+	-1   0    0    1   
+$EndComp
+Connection ~ 4400 5650
+Connection ~ 5550 5650
+Connection ~ 6700 5650
+Wire Wire Line
+	4600 3550 4750 3550
+Wire Wire Line
+	4600 4600 4750 4600
+Wire Wire Line
+	5750 3550 5900 3550
+Wire Wire Line
+	5750 4600 5900 4600
+Wire Wire Line
+	6900 3550 7050 3550
+Wire Wire Line
+	6900 4600 7050 4600
+Wire Wire Line
+	4600 5650 4750 5650
+Wire Wire Line
+	5750 5650 5900 5650
+Wire Wire Line
+	6900 5650 7050 5650
+Wire Wire Line
+	4000 4900 4000 5350
+Wire Wire Line
+	5150 4900 5150 5350
+Wire Wire Line
+	6300 4900 6300 5350
+Wire Wire Line
+	7450 4900 7450 5350
+Wire Wire Line
+	4400 3550 4750 3550
+Wire Wire Line
+	4400 4600 4750 4600
+Wire Wire Line
+	5550 3550 5900 3550
+Wire Wire Line
+	5550 4600 5900 4600
+Wire Wire Line
+	6700 3550 7050 3550
+Wire Wire Line
+	6700 4600 7050 4600
+Wire Wire Line
+	4400 5650 4750 5650
+Wire Wire Line
+	5550 5650 5900 5650
+Wire Wire Line
+	6700 5650 7050 5650
+Text GLabel 8600 700  1    50   Input ~ 0
+col4
+Text GLabel 9700 700  1    50   Input ~ 0
+col5
+$Comp
+L Connector:Conn_01x08_Male J3
+U 1 1 5E808AF8
+P 10100 1850
+F 0 "J3" H 10072 1732 50  0000 R CNN
+F 1 "Conn_01x08_Male" H 10072 1823 50  0000 R CNN
+F 2 "" H 10100 1850 50  0001 C CNN
+F 3 "~" H 10100 1850 50  0001 C CNN
+	1    10100 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 1450 9900 1450
+Connection ~ 7850 1450
+Wire Wire Line
+	7850 2500 9150 2500
+Wire Wire Line
+	9150 2500 9150 1550
+Wire Wire Line
+	9150 1550 9900 1550
+Connection ~ 7850 2500
+Wire Wire Line
+	7850 3550 9200 3550
+Wire Wire Line
+	9200 3550 9200 1650
+Wire Wire Line
+	9200 1650 9900 1650
+Connection ~ 7850 3550
+Wire Wire Line
+	7850 4600 9250 4600
+Wire Wire Line
+	9250 4600 9250 1750
+Wire Wire Line
+	9250 1750 9900 1750
+Connection ~ 7850 4600
+Wire Wire Line
+	7850 5650 9300 5650
+Wire Wire Line
+	9300 5650 9300 1850
+Wire Wire Line
+	9300 1850 9900 1850
+Connection ~ 7850 5650
+Wire Wire Line
+	8600 700  8600 2050
+Wire Wire Line
+	8600 2050 9900 2050
+Wire Wire Line
+	9700 700  9700 2150
+Wire Wire Line
+	9700 2150 9900 2150
+NoConn ~ 9900 1950
+$EndSCHEMATC
